@@ -5,8 +5,8 @@ def line(current_line)
     puts "The line is currently empty."
   else
     number_and_name = []
-    current_line.each_with_index do |value, index|
-      number_and_name.push("#{index.to_i+1}. #{value}")
+    current_line.each_with_index do |name, index|
+      number_and_name.push("#{index+1}. #{name}")
     end
     puts "The line is currently: " + number_and_name.join(" ")
   end
